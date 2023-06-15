@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    var arr = ['a', 'b', 'c', 'd', 'e'];
+    var char = prompt("type here");
+
+    function find(arr, char){
+        var count = 0;
+        for (let i = 0; i < arr.length; i++) {
+            if(arr[i] === char){
+                count++;
+            }
+        }
+        if(count === 0){
+            return -1
+        }else {
+            return count;
+        }
+    }
+
+    document.write(find(arr, char));
+</script>
+</body>
+</html>
