@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var c = prompt("nhập tên ngôi sao")
+   message = c
+var a = ["Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe", "Regulus"]
+var b = ["Ursa Minor", "Tarurus", "Cygnus", "Lyra", "Aquila", "Ursa Major", "Leo"]
+function check(message){
+    for (let i = 0; i < a.length; i++) {
+        if (message == a[i]){
+            alert(b[i])
+            return b[i]
+        } else {
+            alert("không có tên ngôi sao này");
+            return "không có tên ngôi sao này"
+        }
+    }
+}
+document.write(check(message))
+</script>
+</body>
+</html>
